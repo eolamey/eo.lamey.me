@@ -1,11 +1,3 @@
 [build]
 publish = "public"
 command = "hugo --gc --minify"
-
-[[redirects]]
-  from = "/resume"
-  to = "/resume/en/"
-
-[context.production.environment]
-HUGO_VERSION = "0.62.0"
-HUGO_ENV = "production"
