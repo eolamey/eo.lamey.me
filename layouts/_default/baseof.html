@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+
+  <title>{{ .Title }}</title>
+
+  <link rel="home" href="/">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <!-- <link rel="alternate" href="{{ .Site.RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}" /> -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Source+Code+Pro&display=swap"/>
+  <link rel="stylesheet" href="{{ "css/reset.css" | relURL }}" type="text/css"/>
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-title">
+        <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+      </div>
+      <div class="nav-items">
+        <a href="/resume/en/">resume</a>
+        <a href="/about">about</a>
+        <a href="https://github.com/eolamey"><img src="{{ "icons/github.svg" | relURL }}"/></a>
+        <!-- <a href="{{ .Site.RSSLink }}"><img src="{{ "icons/rss.svg" | relURL }}"/></a> -->
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+</body>
+</html>

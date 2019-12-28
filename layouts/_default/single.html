@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="section">
+  <div class="title">
+    <h1>{{ .Title }}</h1>
+    <span>{{ if not .Date.IsZero }}{{ .Date.Format "January 2, 2006" }}{{ end }}</span>
+  </div>
+  {{ .Content }}
+</section>
+{{- end }}

@@ -1,0 +1,273 @@
+/*
+ * elements
+ */
+ html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body {
+  color: #42464c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #757575;
+  margin-bottom: 2em;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
+  margin: 1.5em 0;
+}
+h3, h4, h5, h6 {
+  font-size: 1rem;
+  margin: 1.5em 0;
+}
+p {
+  margin-bottom: 1.3em;
+  text-align: justify;
+}
+a {
+  color: #42464c;
+}
+code, pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  background-color: #fafafa;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  padding: 1px 2px;
+}
+code[data-lang] {
+  background-color: inherit;
+  color: inherit;
+}
+pre {
+  border: 1px solid #ddd;
+}
+table {
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  width: 80%;
+}
+th {
+  background-color: #fafafa;
+  text-align: left;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+}
+ol, ul {
+  margin-left: 2em;
+}
+ol {
+  list-style: decimal;
+}
+ul {
+  list-style: square;
+}
+blockquote {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  width: 80%;
+}
+blockquote>p {
+  margin: 0;
+}
+strong {
+  font-weight: 700;
+}
+sub, sup {
+  font-size: 0.8rem;
+  margin: 2px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  height: 1px;
+  margin: 2em 0;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.title span {
+  font-size: 0.8rem;
+}
+
+/*
+ * header
+ */
+header {
+  background-color: #fafafa;
+  color: #222324;
+  height: 10em;
+  margin-bottom: 3em;
+}
+header h1 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 0;
+}
+nav {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 800px;
+}
+nav div {
+  align-items: center;
+  display: flex;
+}
+div.nav-title {
+  float: left;
+}
+div.nav-items {
+  float: right;
+  font-size: 1rem;
+}
+div.nav-items a {
+  padding-left: 0.5em;
+}
+nav img {
+  height: 18px;
+  width: 18px;
+}
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+  header {
+    padding: 0 1em 0 1em;
+  }
+}
+
+/*
+ * content
+ */
+main {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/*
+ * articles
+ */
+.articles-date {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8rem;
+  margin-right: 1em;
+}
+
+/*
+ * resume
+ */
+.resume h1 {
+  left: 25%;
+  margin-bottom: 3em;
+  position: relative;
+  width: 75%;
+}
+.resume h2 {
+  font-size: 1rem;
+  position: relative;
+  text-align: right;
+  top: 2.9em;
+  width: 15%;
+}
+.resume p, .resume ul {
+  left: 25%;
+  position: relative;
+  width: 75%;
+}
+.resume ul {
+  margin: 0 0 2em 0;
+  overflow: auto;
+}
+.resume ul li {
+  display: inline-block;
+  list-style: none;
+}
+.resume ul li:nth-child(1) {
+  float: left;
+}
+.resume ul li:nth-child(2) {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  color: #757575;
+  float: right;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.7rem;
+}
+.resume code {
+  background-color: inherit;
+  color: #757575;
+  font-size: 0.7rem;
+}
+.resume pre {
+  background-color: inherit;
+  border: none;
+  left: 25%;
+  margin-bottom: 2.5em;
+  position: relative;
+  white-space: pre-wrap;
+  width: 75%;
+}
+@media screen and (max-width: 800px) {
+  .resume h1 {
+    left: inherit;
+    margin: 1em 1em 3em 0.5em;
+    position: inherit;
+    text-align: inherit;
+  }
+  .resume h2 {
+    left: inherit;
+    margin: 1em;
+    position: inherit;
+    text-align: inherit;
+  }
+  .resume p, .resume ul, .resume pre {
+    left: inherit;
+    margin: 1em;
+    position: inherit;
+    width: 90%;
+  }
+  .resume ul li {
+    display: inherit;
+  }
+  .resume ul li:nth-child(1), .resume ul li:nth-child(2) {
+    float: inherit;
+  }
+}
+@media print {
+  html {
+    font-size: 10px;
+  }
+  body {
+    margin-right: 5em;
+  }
+  header {
+    display: none !important;
+  }
+  .resume h1 {
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+  .resume h2 {
+    top: 2.8em;
+  }
+}

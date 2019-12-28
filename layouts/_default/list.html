@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ $pages := where (where .Site.Pages "Section" "articles") "Kind" "page" }}
+{{ if gt $pages 0 }}
+<sect
+ion>
+  <h1>Articles</h1>
+  <ul>
+    {{ range sort $pages }}
+    <li>
+      <span class="articles-date">{{ .Date.Format "2006․01․02" }}</span>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} (draft){{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{- end }}
+{{- end }}

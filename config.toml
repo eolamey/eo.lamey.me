@@ -1,0 +1,8 @@
+baseURL = "https://eo.lamey.me"
+title = "consistently contradictory"
+languageCode = "en-us"
+
+disableHugoGeneratorInject = true
+
+[author]
+  name = "Eric-Olivier Lamey"
