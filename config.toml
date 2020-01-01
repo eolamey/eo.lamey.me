@@ -3,6 +3,7 @@ title = "consistently contradictory"
 languageCode = "en-us"
 
 disableHugoGeneratorInject = true
+disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
 
 [author]
   name = "Eric-Olivier Lamey"
