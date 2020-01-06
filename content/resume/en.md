@@ -50,7 +50,7 @@ I worked on several IT infrastructure projects for the Montreal studio (which wa
 * __CTO__, Savoir-faire Linux
 * Canada, 09/2001 - 08/2003
 
-I started as a system administrator consultant, and spent two years helping the company grow from 3 to 10 people, acquire new clients and expand its range of services, ultimately being promoted to CTO. I worked on architecture and implementation of projects based on open source operating systems and software, deployment and operations for production services as well as management of a small team of developers and sysadmins.
+I started as a system administrator consultant, and spent two years helping the company double in size, acquire new clients and expand its range of services, ultimately being promoted to CTO. I worked on architecture and implementation of projects based on open source operating systems and software, deployment and operations for production services as well as management of a small team of developers and sysadmins.
 
 I also wrote and taught various training courses for Linux and open source software.
 
