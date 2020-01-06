@@ -5,6 +5,8 @@ layout: resume
 
 # Eric-Olivier Lamey
 
+    <eo@lamey.me>
+
 ## Experience
 
 * __Tech Lead__, Cloudwatt

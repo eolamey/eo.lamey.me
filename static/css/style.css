@@ -189,6 +189,11 @@ main {
   top: 2.9em;
   width: 15%;
 }
+.resume h1+pre {
+  padding: 0;
+  position: relative;
+  top: -5em;
+}
 .resume p, .resume ul {
   left: 25%;
   position: relative;
@@ -226,6 +231,10 @@ main {
   position: relative;
   white-space: pre-wrap;
   width: 75%;
+}
+.resume strong {
+  color: #222324;
+  font-weight: 500;
 }
 @media screen and (max-width: 800px) {
   .resume h1 {
